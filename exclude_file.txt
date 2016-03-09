@@ -1,0 +1,49 @@
+#exclude the files
+- *~
+- *#
+- #*
+- *.tmp
+- *.o
+- *.out
+- *.dbg
+- *basicQuotes.dat
+- ~*
+
+- _*/
+- .*/
+- temp*/
+- tmp/
+- plugins/
+- System\ Volume\ Information/
+- System Volume Information/
+- $RECYCLE.BIN/
+- .svn/
+- bin/
+- Lib/
+- obj/
+- packages/
+- Backup/
+- OneDrive*/
+- Downloads/
+- Download/
+- *download/
+- cygwin64/
+- iTune/
+- eclipse*/
+
+
+#+ */
+#+ *
+#- *.iso
+#- *.yuv
+#- *.own
+#- *.avi
+#- *.ppm
+#- *.PGM
+#- *.pgm
+#- *.png
+#- *.bmp
+#- *.jpg
+#- *.JPG
+#- *.gif
+#- *.wmv

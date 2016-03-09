@@ -1,0 +1,37 @@
+#exclude the files
+- *~
+- *#
+- #*
+- *.tmp
+- *.o
+- *.out
+- *.dbg
+- *basicQuotes.dat
+
+- temp/
+- tmp/
+- System\ Volume\ Information/
+- System Volume Information/
+- $RECYCLE.BIN/
+- .svn/
+- bin/
+- Lib/
+- obj/
+- packages/
+- Backup/
+
+#+ */
+#+ *
+#- *.iso
+#- *.yuv
+#- *.own
+#- *.avi
+#- *.ppm
+#- *.PGM
+#- *.pgm
+#- *.png
+#- *.bmp
+#- *.jpg
+#- *.JPG
+#- *.gif
+#- *.wmv

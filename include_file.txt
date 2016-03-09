@@ -1,0 +1,42 @@
+#include the files
+
+- temp/
+- Backup/
+- Download/
+- ftp/
++ */
+
+
+#for c++ code
++ inc/
++ src/
++ *.hh
++ *.h
++ *.cpp
++ *.c
++ *.cc
++ Makefile
++ makefile
++ *.sh
++ *.ggo
+
+
+#for tex file
++ *.tex
++ *.sty
++ *.bst
++ *.eps
++ *.vsd
++ *.sty
++ *.cls
+
+
+#for documents
++ *.xls
++ *.doc
++ *.ppt
++ *.opj
++ *.pdf
+
+- *
+

@@ -22,7 +22,7 @@ if [ "$PS1" ]; then
     alias   xem='xemacs'
     
     #git command
-    alias  gl='git log --oneline'
+    alias  gl='git log --oneline --decorate --graph --all -10'
     alias  gla='git log --graph --full-history --all --color --date=short --pretty=format:"%x1b[31m%h%x09%x1b[32m%d%x1b[0m%x20%ad %s"'
     alias  gt='git tag'
     alias  gco='git checkout'
@@ -36,6 +36,7 @@ if [ "$PS1" ]; then
     alias  gfindtagfromcommit='git describe --tags'
     alias  gfindcommitfromtag='git rev-list -n 1'
     alias  greset='git reset --hard HEAD'
+    alias  gitshowremote='git remote -v'
     
     alias UpdateLib='python E:/Code/PythonScript/PythonScript/UpdateLib.py'
     alias MsBuild='python E:/Code/PythonScript/PythonScript/MsBuild.py'

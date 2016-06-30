@@ -38,8 +38,8 @@ if [ "$PS1" ]; then
     alias  greset='git reset --hard HEAD'
     alias  gitshowremote='git remote -v'
     
-    alias UpdateLib='python G:/Code/PythonScript/PythonScript/UpdateLib.py'
-    alias MsBuild='python G:/Code/PythonScript/PythonScript/MsBuild.py -C D:\\home\\liping\\MsBuild.txt'
+    alias UpdateLib='python D:/home/liping/python/UpdateLib.py'
+    alias MsBuild='python D:/home/liping/python/MsBuild.py -C D:\\home\\liping\\enviroment.json'
     alias ssh21='ssh -X liping@131.155.26.21'
 
     #export PS1='\[\e]1;My Desk\a\e]2;\u  \h  \s  \t  \d   ${PWD}\a\]\[\u@\h \W]$: '

@@ -32,18 +32,37 @@ echo 'start GUI given seed solutions'
 echo python $MsBuild -o 7 -s $fileSeedSolutions -C $fileEnviroment
 
 echo '############################################################################################################################################################'
-echo 'git build given seed solutions and complete solutions'
-echo python $MsBuild -o 71 -s $fileSeedSolutions -j $fileCompleteSolutions -C $fileEnviroment
+echo 'start GUI given given complete solutions'
+echo python $MsBuild -o 71 -j $fileCompleteSolutions -C $fileEnviroment
+
 
 echo '############################################################################################################################################################'
-#a = ['-o', '91', '-s', fileSeedSolutions, '-j', fileCompleteSolutions, '-u', 'liping', '-P', '308721', '-I', '121.43.98.245', '-O', '81', '-C', fileEnviroment, '-m', fileProjectMata];       
-echo 'check out complete solutions, create batchbuild and integration stream'
-echo python $MsBuild -o 91 -s $fileSeedSolutions -j $fileCompleteSolutions -C $fileEnviroment -u liping -P 308721 -I 121.43.98.245 -O 81
+echo 'clone solutions, create batchbuild branch and create integration stream given complete solutions'
+echo python $MsBuild -o 91 -j $fileCompleteSolutions -C $fileEnviroment -u liping -P 308721 -I 121.43.98.245 -O 81
+
 
 echo '############################################################################################################################################################'
-#a = ['-o', '11', '-s', fileSeedSolutions, '-C', fileEnviroment, '-m', fileProjectMata, '-u', 'liping', '-P', '308721', '-I', '121.43.98.245', '-O', '81'];       
-echo 'clone intergration stream to workname'
+echo 'update master, batchbuild and integration streams given complete solutions'
+echo python $MsBuild -o 92 -j $fileCompleteSolutions -C $fileEnviroment -u liping -P 308721 -I 121.43.98.245 -O 81
+
+
+echo '############################################################################################################################################################'
+echo 'clone workname from integration streams given seed solutions'
 echo python $MsBuild -o 11 -s $fileSeedSolutions -C $fileEnviroment -u liping -P 308721 -I 121.43.98.245 -O 81
+
+echo '############################################################################################################################################################'
+echo 'update workName from integration streams given seed solutions'
+echo python $MsBuild -o 93 -s $fileSeedSolutions  -C $fileEnviroment -u liping -P 308721 -I 121.43.98.245 -O 81
+
+echo '############################################################################################################################################################'
+#a = ['-o', '14', '-B', 'D:\\packages', '-j', fileCompleteSolutions];           
+echo 'create package meta'
+echo python $MsBuild -o 14 -j $fileCompleteSolutions -B 'D:\\packages'
+
+echo '############################################################################################################################################################'
+echo 'create project meta data given root folder'
+echo python $MsBuild -o 16 -r 'D:\\Batchbuild\\20180722_IBTrader_1.0.1'
+
 
 
 # echo '############################################################################################################################################################'
@@ -74,11 +93,19 @@ elif [[ $input = 41 ]]; then
 elif [[ $input = 7 ]]; then
   python $MsBuild -o 7 -s $fileSeedSolutions -C $fileEnviroment;
 elif [[ $input = 71 ]]; then
-  python $MsBuild -o 71 -s $fileSeedSolutions -j $fileCompleteSolutions -C $fileEnviroment;
+  python $MsBuild -o 71 -j $fileCompleteSolutions -C $fileEnviroment;
 elif [[ $input = 91 ]]; then
-  python $MsBuild -o 91 -s $fileSeedSolutions -j $fileCompleteSolutions -C $fileEnviroment -u liping -P 308721 -I 121.43.98.245 -O 81;
+  python $MsBuild -o 91 -j $fileCompleteSolutions -C $fileEnviroment -u liping -P 308721 -I 121.43.98.245 -O 81;
+elif [[ $input = 92 ]]; then
+  python $MsBuild -o 92 -j $fileCompleteSolutions -C $fileEnviroment -u liping -P 308721 -I 121.43.98.245 -O 81;
 elif [[ $input = 11 ]]; then
   python $MsBuild -o 11 -s $fileSeedSolutions -C $fileEnviroment -u liping -P 308721 -I 121.43.98.245 -O 81
+elif [[ $input = 93 ]]; then
+  python $MsBuild -o 93 -s $fileSeedSolutions -C $fileEnviroment -u liping -P 308721 -I 121.43.98.245 -O 81
+elif [[ $input = 14 ]]; then
+  python $MsBuild -o 14 -j $fileCompleteSolutions -B 'D:\\packages'
+elif [[ $input = 16 ]]; then
+  python $MsBuild -o 16 -r 'D:\\Batchbuild\\20180722_IBTrader_1.0.1'
 else
   echo "not valid choice";
 fi

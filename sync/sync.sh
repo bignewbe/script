@@ -10,11 +10,12 @@ SRC1=$1
 DST1=$2
 EXCLUDE=$3
 
+
 #set if delete or not delete the destination
 if [ $4 -eq 1 ]; then
-   OPT="-av --chmod=ugo=rwX"
+   OPT="-av --chmod=ugo=rwX -e ssh"
 elif [ $4 -eq 2 ]; then
-   OPT="-av --chmod=ugo=rwX --delete --delete-excluded"
+   OPT="-av --chmod=ugo=rwX -e ssh --delete --delete-excluded"
 fi
 
 #set exclude file if any

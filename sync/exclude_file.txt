@@ -8,6 +8,8 @@
 - *.dbg
 - *basicQuotes.dat
 - ~*
+- *.zip
+- $*
 
 - _*/
 - .*/
@@ -31,6 +33,15 @@
 - iTune/
 - eclipse*/
 
+- ASUS_B360_PLUS/
+- lib/
+- backup/
+- BaiduNetdisk/
+- data/
+- home/
+- publish/
+- found.000/
+- TestResults/
 
 #+ */
 #+ *

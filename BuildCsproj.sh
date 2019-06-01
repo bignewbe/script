@@ -1,11 +1,11 @@
-UpdateLib=D:/Code/PythonScript/PythonScript/UpdateLib.py;
-MsBuild=D:/Code/PythonScript/PythonScript/MsBuild.py;
-DstFolder=D:\\Lib
-fileEnviroment=D:\\\BuildConfig\\\environment.json;
+UpdateLib=E:/Code/PythonScript/PythonScript/UpdateLib.py;
+MsBuild=E:/Code/PythonScript/PythonScript/MsBuild.py;
+DstFolder=E:\\Lib
+fileEnviroment=E:\\\BuildConfig\\\environment.json;
 fileProjectMata=None;
 #fileSeedSolutions=D:\\\Code\\\20170311_IBTrader_1.0.0\\\seedProjects.json;
-fileSeedSolutions=D:\\\Code\\\20180722_seedProjects.json;
-fileCompleteSolutions=D:\\\Code\\\completeProjects.json;
+fileSeedSolutions=E:\\\Code\\\20180722_seedProjects.json;
+fileCompleteSolutions=E:\\\Code\\\completeProjects.json;
 
 echo '############################################################################################################################################################'
 # test build given seedSolutions

@@ -32,6 +32,9 @@
 - cygwin64/
 - iTune/
 - eclipse*/
+- lib/
+- bin/
+- obj/
 
 - ASUS_B360_PLUS/
 - lib/

@@ -1,11 +1,59 @@
 #include the files
 
+- *~
+- *#
+- #*
+- *.tmp
+- *.o
+- *.out
+- *.dbg
+- *basicQuotes.dat
+- ~*
+- *.zip
+- $*
+
+- _*/
+- .*/
+- temp*/
+- tmp/
+- plugins/
+- System\ Volume\ Information/
+- System Volume Information/
+- $RECYCLE.BIN/
+- .svn/
+- bin/
+- obj/
+- Backup/
+- OneDrive*/
+- Downloads/
+- Download/
+- *download/
+- cygwin64/
+- iTune/
+- eclipse*/
+- lib/
+- bin/
+- obj/
 - temp/
 - Backup/
 - Download/
 - ftp/
 + */
 
+#for c# code
+- obj/*
+- bin/*
+- Release/*
+- Debug/*
++ Resources.resx
++ packages/*
++ *.cs
++ *.sln
++ *.csproj
++ *.xaml
++ *.config
++ *.json
++ NLog.xsd
 
 #for c++ code
 + inc/

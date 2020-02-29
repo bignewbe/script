@@ -45,6 +45,7 @@
 - publish/
 - found.000/
 - TestResults/
++ .git/
 
 #+ */
 #+ *
